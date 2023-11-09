@@ -1,0 +1,11 @@
+on: [push]
+jobs:
+    build:
+        name: My first workflow
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Outputting my first message
+              run: |
+                echo You just wrote your first complete workflow
+                echo and you are running it successfully!
